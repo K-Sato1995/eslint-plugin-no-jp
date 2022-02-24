@@ -1,15 +1,15 @@
-import { TSESLint, TSESTree } from "@typescript-eslint/utils";
-import { RuleContext } from '@typescript-eslint/utils/dist/ts-eslint';
+import { TSESLint, TSESTree } from '@typescript-eslint/utils'
+import { RuleContext } from '@typescript-eslint/utils/dist/ts-eslint'
 import { includeJa } from '../utils'
-import type { MessageIds, Options } from '../../types'
+import type { MessageIds, Options } from '../types'
 
 export const noJpIdentifier: TSESLint.RuleModule<'noJpIdentifier', []> = {
   meta: {
-    type: "suggestion",
+    type: 'suggestion',
     docs: {
-      description: "Make sure there is no identifier written in Japanese.",
-      recommended: "error",
-      url: "",
+      description: 'Make sure there is no identifier written in Japanese.',
+      recommended: 'error',
+      url: '',
     },
     messages: {
       'noJpIdentifier': 'Please refrain from using the Japanese language for indentifiers(日本語の使用はお控えください)'

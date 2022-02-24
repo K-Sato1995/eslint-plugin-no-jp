@@ -1,4 +1,4 @@
-import { includeJa } from "../utils";
+import { includeJa } from '../utils'
 
 describe('include Ja', () => {
   test('All in JP', () => {

@@ -1,14 +1,14 @@
-import { TSESLint } from "@typescript-eslint/utils";
-import { noJpComment } from "../rules/noJpComment";
+import { TSESLint } from '@typescript-eslint/utils'
+import { noJpComment } from '../rules/noJpComment'
 
 const ruleName = 'no-jp-comment'
 
 // https://eslint.org/docs/developer-guide/nodejs-api#ruletester
 const tester = new TSESLint.RuleTester({
-  parser: require.resolve("espree"),
+  parser: require.resolve('espree'),
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: "module",
+    sourceType: 'module',
   }
 })
 
@@ -59,32 +59,32 @@ describe(ruleName, () => {
   `
   tester.run(ruleName, noJpComment, {
     valid: [
-      { name: "code with an English comment", code: codeWithEnComment },
-      { name: "code with a Japanese string value", code: codeWithJpString },
-      { name: "code with a Russian comment", code: codeWithRussianComment },
-      { name: "code with a English comment(block comment)", code: codeWithEnBlockComment }
+      { name: 'code with an English comment', code: codeWithEnComment },
+      { name: 'code with a Japanese string value', code: codeWithJpString },
+      { name: 'code with a Russian comment', code: codeWithRussianComment },
+      { name: 'code with a English comment(block comment)', code: codeWithEnBlockComment }
     ],
     invalid: [
       {
-        name: "code with a Japanese comment",
+        name: 'code with a Japanese comment',
         code: codeWithJpComment,
-        errors: [{ messageId: "noJpComment" }],
+        errors: [{ messageId: 'noJpComment' }],
       },
       {
-        name: "code with a partially Japanese comment",
+        name: 'code with a partially Japanese comment',
         code: codeWithPartialyJpComment,
-        errors: [{ messageId: "noJpComment" }],
+        errors: [{ messageId: 'noJpComment' }],
       },
       {
-        name: "code with a Japanese comment and an English Comment",
+        name: 'code with a Japanese comment and an English Comment',
         code: codeWithEnAndJpComment,
-        errors: [{ messageId: "noJpComment" }],
+        errors: [{ messageId: 'noJpComment' }],
       },
       {
-        name: "code with a Japanese comment(block comment)",
+        name: 'code with a Japanese comment(block comment)',
         code: codeWithJaBlockComment,
-        errors: [{ messageId: "noJpComment" }],
+        errors: [{ messageId: 'noJpComment' }],
       }
     ],
-  });
-});
+  })
+})

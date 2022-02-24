@@ -6,14 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:node/recommended',
   ],
-  parser: ["babel-eslint", '@typescript-eslint/parser',],
-  parserOptions: {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "modules": true
-    }
-  },
+  parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
   ],
@@ -24,5 +17,12 @@ module.exports = {
     'semi': [1, 'never'],
     'quotes': [1, 'single'],
     'eol-last': [1, 'always'],
+    'node/no-unsupported-features/es-syntax': [
+      'error',
+      { ignores: ['modules'] },
+    ],
+    'node/no-unpublished-import': ['error', {
+      'allowModules': ['@typescript-eslint/utils']
+    }],
   }
 }

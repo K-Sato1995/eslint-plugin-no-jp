@@ -11,7 +11,7 @@
   "author": "K-Sato1995",
   "main": "build/index.js",
   "scripts": {
-    "lint": "eslint . --fix && npm run check-types",
+    "lint": "eslint . --fix",
     "test": "./node_modules/.bin/jest --config ./jest.config.js",
     "check-types": "tsc --noemit",
     "build": "tsc lib/index.ts --outDir build"
