@@ -13,7 +13,7 @@ Helps the team(you) stick to English throuout the codebase. In other words, it h
 - with Yarn
 
 ```sh
-yarn add -D eslint-plugin-jsx-dollar
+yarn add -D eslint-plugin-no-jp
 ```
 
 - with npm
