@@ -13,7 +13,7 @@ module.exports.rules = {
 module.exports.configs = {
   recommended: {
     rules: {
-      'no-jp/no-jp-identifier': 1,
+      'no-jp/no-jp-identifier': 2,
       'no-jp/no-jp-comment': 1
     },
   },
