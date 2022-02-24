@@ -1,2 +1,2 @@
-type MessageIds = 'noHoge' | 'noJpComment'
+type MessageIds = 'noJpIdentifier' | 'noJpComment'
 type Options = []

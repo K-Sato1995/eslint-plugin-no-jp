@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-var noHoge_1 = require("./rules/noHoge");
+var noJpIdentifier_1 = require("./rules/noJpIdentifier");
 var noJpComment_1 = require("./rules/noJpComment");
 //------------------------------------------------------------------------------
 // Working with Rules(ESLint official Document)
@@ -8,13 +8,13 @@ var noJpComment_1 = require("./rules/noJpComment");
 // - Selectors: https://eslint.org/docs/developer-guide/selectors
 //------------------------------------------------------------------------------
 module.exports.rules = {
-    'no-hoge': noHoge_1.noHoge,
+    'no-jp-identifier': noJpIdentifier_1.noJpIdentifier,
     'no-jp-comment': noJpComment_1.noJpComment
 };
 module.exports.configs = {
     recommended: {
         rules: {
-            'no-jp/no-hoge': 2,
+            'no-jp/no-jp-identifier': 2,
             'no-jp/no-jp-comment': 2
         }
     }

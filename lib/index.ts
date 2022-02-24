@@ -1,4 +1,4 @@
-import { noHoge } from './rules/noHoge'
+import { noJpIdentifier } from './rules/noJpIdentifier'
 import { noJpComment } from './rules/noJpComment'
 //------------------------------------------------------------------------------
 // Working with Rules(ESLint official Document)
@@ -6,14 +6,14 @@ import { noJpComment } from './rules/noJpComment'
 // - Selectors: https://eslint.org/docs/developer-guide/selectors
 //------------------------------------------------------------------------------
 module.exports.rules = {
-  'no-hoge': noHoge,
+  'no-jp-identifier': noJpIdentifier,
   'no-jp-comment': noJpComment
 }
 
 module.exports.configs = {
   recommended: {
     rules: {
-      'no-jp/no-hoge': 2,
+      'no-jp/no-jp-identifier': 2,
       'no-jp/no-jp-comment': 2
     },
   },

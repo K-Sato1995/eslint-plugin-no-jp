@@ -1,19 +1,20 @@
 import { TSESTree } from "@typescript-eslint/utils";
 import { RuleContext } from '@typescript-eslint/utils/dist/ts-eslint';
+import { includeJa } from '../utils'
 import type { MessageIds, Options } from '../../types'
 
-export const noHoge = {
+export const noJpIdentifier = {
   meta: {
     type: "suggestion",
     messages: {
-      'noHoge': 'You MUST NOT USE hoge variable.'
+      'noJpIdentifier': 'Please refrain from using the Japanese language for indentifiers(日本語の使用はお控えください)'
     }
   },
   create: (context: RuleContext<MessageIds, Options>) => {
     return {
       'Identifier': (node: TSESTree.Identifier) => {
-        if (node.name === 'hoge') {
-          context.report({ node, messageId: 'noHoge' })
+        if (includeJa(node.name)) {
+          context.report({ node, messageId: 'noJpIdentifier' })
         }
       }
     }

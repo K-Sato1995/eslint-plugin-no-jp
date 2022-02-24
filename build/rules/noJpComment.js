@@ -5,7 +5,7 @@ var utils_1 = require("../utils");
 exports.noJpComment = {
     meta: {
         messages: {
-            'noJpComment': 'Please refrain from using the Japanese language(日本語のご使用はお控えください)'
+            'noJpComment': 'Please refrain from using the Japanese language for comments(日本語のご使用はお控えください)'
         }
     },
     create: function (context) {

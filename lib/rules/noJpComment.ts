@@ -6,7 +6,7 @@ import type { MessageIds, Options } from '../../types'
 export const noJpComment = {
   meta: {
     messages: {
-      'noJpComment': 'Please refrain from using the Japanese language(日本語のご使用はお控えください)'
+      'noJpComment': 'Please refrain from using the Japanese language for comments(日本語のご使用はお控えください)'
     }
   },
   create: (context: RuleContext<MessageIds, Options>) => {
