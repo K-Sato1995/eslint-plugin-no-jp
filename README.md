@@ -2,7 +2,7 @@
 
 __⚠️Currently Not Available⚠️__
 
-※ I just need to rerun all jobs [here](https://github.com/K-Sato1995/eslint-plugin-no-jp/actions/runs/1892253281) after 24h.
+※ I just need to create tag(v1.0.0) locally and push it.
 
 ## Overview
 
