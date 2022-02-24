@@ -6,10 +6,13 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:node/recommended',
   ],
-  parser: '@typescript-eslint/parser',
+  parser: ["babel-eslint", '@typescript-eslint/parser',],
   parserOptions: {
-    'ecmaVersion': 12,
-    'sourceType': 'module',
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
   },
   plugins: [
     '@typescript-eslint',
@@ -27,5 +30,12 @@ module.exports = {
     'semi': [1, 'never'],
     'quotes': [1, 'single'],
     'eol-last': [1, 'always'],
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "version": ">=13.0.0",
+        "ignores": ["modules"]
+      }
+    ],
   }
 }
