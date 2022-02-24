@@ -8,7 +8,7 @@ module.exports = {
   ],
   parser: ["babel-eslint", '@typescript-eslint/parser',],
   parserOptions: {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2020,
     "sourceType": "module",
     "ecmaFeatures": {
       "modules": true
