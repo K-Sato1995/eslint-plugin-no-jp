@@ -1,6 +1,6 @@
 import { TSESTree } from "@typescript-eslint/utils";
 import { RuleContext } from '@typescript-eslint/utils/dist/ts-eslint';
-import type { MessageIds, Options } from '../types'
+import type { MessageIds, Options } from '../../types'
 
 export const noHoge = {
   meta: {

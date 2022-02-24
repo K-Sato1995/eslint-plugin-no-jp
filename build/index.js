@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
-var noHoge_1 = require("./noHoge");
-var noJpComment_1 = require("./noJpComment");
+var noHoge_1 = require("./rules/noHoge");
+var noJpComment_1 = require("./rules/noJpComment");
 //------------------------------------------------------------------------------
 // Working with Rules(ESLint official Document)
 // - Rules: https://eslint.org/docs/developer-guide/working-with-rules

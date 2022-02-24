@@ -1,5 +1,5 @@
-import { noHoge } from './noHoge'
-import { noJpComment } from './noJpComment'
+import { noHoge } from './rules/noHoge'
+import { noJpComment } from './rules/noJpComment'
 //------------------------------------------------------------------------------
 // Working with Rules(ESLint official Document)
 // - Rules: https://eslint.org/docs/developer-guide/working-with-rules

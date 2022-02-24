@@ -14,7 +14,7 @@
     "lint": "eslint . --fix && npm run check-types",
     "test": "mocha tests --recursive",
     "check-types": "tsc --noemit",
-    "build": "tsc lib/*.ts --outDir build"
+    "build": "tsc lib/index.ts --outDir build"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
