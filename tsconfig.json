@@ -7,7 +7,12 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
-    "./lib/index.ts"
+    "./lib/*.ts",
+    "./lib/**/*.ts",
+    "./lib/__test__"
   ],
 }

@@ -1,2 +1,2 @@
-type MessageIds = 'noJpIdentifier' | 'noJpComment'
-type Options = []
+export type MessageIds = 'noJpIdentifier' | 'noJpComment'
+export type Options = []

@@ -20,12 +20,6 @@ module.exports = {
   env: {
     node: true,
   },
-  overrides: [
-    {
-      files: ['tests/**/*.js'],
-      env: { mocha: true },
-    },
-  ],
   rules: {
     'semi': [1, 'never'],
     'quotes': [1, 'single'],
