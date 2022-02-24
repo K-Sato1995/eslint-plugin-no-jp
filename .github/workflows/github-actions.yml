@@ -1,4 +1,4 @@
-name: Check
+name: CI
 on: push
 jobs:
   jest:
@@ -17,3 +17,17 @@ jobs:
         run: yarn
       - name: Run ESLint
         run: npm run lint
+  release:
+    runs-on: ubuntu-latest
+    needs: [jest, eslint]
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm install
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
