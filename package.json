@@ -1,5 +1,5 @@
 {
-  "name": "@sato0130/eslint-plugin-no-jp",
+  "name": "eslint-plugin-no-jp",
   "version": "1.0.0",
   "description": "Make sure nothing is written in Japanese",
   "repository": "K-Sato1995/eslint-plugin-no-jp",
