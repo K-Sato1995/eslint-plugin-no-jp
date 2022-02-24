@@ -5,6 +5,7 @@ const ruleName = 'no-jp-comment'
 
 // https://eslint.org/docs/developer-guide/nodejs-api#ruletester
 const tester = new TSESLint.RuleTester({
+  /* eslint-disable node/no-extraneous-require */
   parser: require.resolve('espree'),
   parserOptions: {
     ecmaVersion: 2020,

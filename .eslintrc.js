@@ -24,5 +24,10 @@ module.exports = {
     'node/no-unpublished-import': ['error', {
       'allowModules': ['@typescript-eslint/utils']
     }],
+    'node/no-missing-import': ['error', {
+      'allowModules': [],
+      'resolvePaths': ['.'],
+      'tryExtensions': ['.js', '.ts', '.d.ts']
+    }]
   }
 }
