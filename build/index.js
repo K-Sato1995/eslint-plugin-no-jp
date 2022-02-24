@@ -1,29 +1,16 @@
 "use strict";
 exports.__esModule = true;
-var rules = {
-    'no-hoge': {
-        meta: {
-            type: "suggestion",
-            messages: {
-                'noHoge': 'You MUST NOT USE hoge variable.'
-            }
-        },
-        create: function (context) {
-            return {
-                'Identifier': function (node) {
-                    if (node.name === 'hoge') {
-                        context.report({ node: node, messageId: 'noHoge' });
-                    }
-                }
-            };
-        }
-    }
+var noHoge_1 = require("./noHoge");
+var config_1 = require("./config");
+//------------------------------------------------------------------------------
+// Working with Rules(ESLint official Document)
+// - Rules: https://eslint.org/docs/developer-guide/working-with-rules
+// - Selectors: https://eslint.org/docs/developer-guide/selectors
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+// Plugin Definition
+//------------------------------------------------------------------------------
+module.exports.rules = {
+    'no-hoge': noHoge_1.noHoge
 };
-module.exports.rules = rules;
-module.exports.configs = {
-    recommended: {
-        rules: {
-            'no-jp/no-hoge': 2
-        }
-    }
-};
+module.exports.configs = config_1.config;
