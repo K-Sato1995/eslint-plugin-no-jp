@@ -3,7 +3,16 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:eslint-plugin/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:node/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    'ecmaVersion': 12,
+    'sourceType': 'module',
+  },
+  plugins: [
+    '@typescript-eslint',
   ],
   env: {
     node: true,

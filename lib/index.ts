@@ -1,9 +1,5 @@
-/**
- * @fileoverview Dosen&#39;t allow jp
- * @author K-Sato1995
- */
-'use strict'
-
+import { TSESTree } from "@typescript-eslint/utils";
+import { RuleContext } from '@typescript-eslint/utils/dist/ts-eslint';
 //------------------------------------------------------------------------------
 // Working with Rules(ESLint official Document)
 // - Rules: https://eslint.org/docs/developer-guide/working-with-rules
@@ -12,19 +8,32 @@
 //------------------------------------------------------------------------------
 // Plugin Definition
 //------------------------------------------------------------------------------
-module.exports.rules = {
+
+type MessageIds = 'noHoge' | 'noJpComment'
+type Options = []
+
+const rules = {
   'no-hoge': {
-    create: (context) => {
+    meta: {
+      type: "suggestion",
+      messages: {
+        'noHoge': 'You MUST NOT USE hoge variable.'
+      }
+    },
+    create: (context: RuleContext<MessageIds, Options>) => {
       return {
-        'Identifier': (node) => {
+        'Identifier': (node: TSESTree.Identifier) => {
           if (node.name === 'hoge') {
-            context.report({ node, message: 'You MUST NOT USE hoge variable.' })
+            context.report({ node, messageId: 'noHoge' })
           }
         }
       }
     }
   },
 }
+
+module.exports.rules = rules;
+
 
 module.exports.configs = {
   recommended: {
