@@ -1,11 +1,12 @@
 # eslint-plugin-no-jp
 
-__⚠️Currently Not Available⚠️___
+__⚠️Currently Not Available⚠️__
+
 ※ I just need to rerun all jobs [here](https://github.com/K-Sato1995/eslint-plugin-no-jp/actions/runs/1892253281) after 24h.
 
 ## Overview
 
-Helps the team(you) stick to English in the codebase.
+Helps the team(you) stick to English throuout the codebase. (Helps the team(you) not rely on Japanese🇯🇵)
 
 ## Installation
 
@@ -80,3 +81,7 @@ const stickToEnglish = () => {
 
 const englishVar = "Hello World"
 ```
+
+## 📜LICENCE
+
+MIT
