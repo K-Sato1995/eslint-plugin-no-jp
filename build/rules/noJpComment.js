@@ -15,7 +15,7 @@ exports.noJpComment = {
             'Program': function () {
                 comments.forEach(function (commentNode) {
                     var val = commentNode.value.trim();
-                    if ((0, utils_1.isJa)(val)) {
+                    if ((0, utils_1.includeJa)(val)) {
                         context.report({ node: commentNode, messageId: 'noJpComment' });
                     }
                 });
