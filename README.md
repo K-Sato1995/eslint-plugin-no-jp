@@ -6,7 +6,7 @@ __⚠️Currently Not Available⚠️__
 
 ## Overview
 
-Helps the team(you) stick to English throuout the codebase. (Helps the team(you) not rely on Japanese🇯🇵)
+Helps the team(you) stick to English throuout the codebase. In other words, it helps the team(you) not rely on Japanese🇯🇵)
 
 ## Installation
 
