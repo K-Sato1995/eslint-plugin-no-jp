@@ -30,12 +30,5 @@ module.exports = {
     'semi': [1, 'never'],
     'quotes': [1, 'single'],
     'eol-last': [1, 'always'],
-    "node/no-unsupported-features/es-syntax": [
-      "error",
-      {
-        "version": ">=13.0.0",
-        "ignores": ["modules"]
-      }
-    ],
   }
 }

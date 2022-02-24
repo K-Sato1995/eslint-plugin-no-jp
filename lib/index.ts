@@ -1,18 +1,23 @@
 import { noHoge } from './noHoge'
-import { config } from './config'
+import { noJpComment } from './noJpComment'
 //------------------------------------------------------------------------------
 // Working with Rules(ESLint official Document)
 // - Rules: https://eslint.org/docs/developer-guide/working-with-rules
 // - Selectors: https://eslint.org/docs/developer-guide/selectors
 //------------------------------------------------------------------------------
-//------------------------------------------------------------------------------
-// Plugin Definition
-//------------------------------------------------------------------------------
 module.exports.rules = {
-  'no-hoge': noHoge
+  'no-hoge': noHoge,
+  'no-jp-comment': noJpComment
 }
 
-module.exports.configs = config
+module.exports.configs = {
+  recommended: {
+    rules: {
+      'no-jp/no-hoge': 2,
+      'no-jp/no-jp-comment': 2
+    },
+  },
+}
 
 
 
