@@ -1,5 +1,9 @@
 # eslint-plugin-no-jp
 
+![npm](https://img.shields.io/npm/v/eslint-plugin-no-jp)
+![CI](https://github.com/K-Sato1995/eslint-plugin-no-jp/actions/workflows/github-actions.yml/badge.svg)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/eslint-plugin-no-jp?color=red)
+
 ## Overview
 
 Helps the team(you) stick to English throuout the codebase. In other words, it helps the team(you) not rely on Japanese🇯🇵)
