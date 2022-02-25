@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-no-jp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make sure nothing is written in Japanese",
   "repository": "K-Sato1995/eslint-plugin-no-jp",
   "type": "commonjs",
