@@ -1,9 +1,5 @@
 # eslint-plugin-no-jp
 
-__⚠️Currently Not Available⚠️__
-
-※ I just need to create tag(v1.0.0) locally and push it.
-
 ## Overview
 
 Helps the team(you) stick to English throuout the codebase. In other words, it helps the team(you) not rely on Japanese🇯🇵)
